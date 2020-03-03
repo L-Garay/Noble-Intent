@@ -4,9 +4,11 @@
       <div class="col-12">
         <h1>This is the contact page.</h1>
       </div>
-      <div class="col-4 offset-3">
-        <div class="contact-form">
-          <form @submit.prevent="sendEmail()">
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-3">
+        <div>
+          <form id="contact-form" @submit.prevent="sendEmail">
             <label>Name</label>
             <input type="text" name="user_name" />
             <label>Phone</label>
@@ -15,7 +17,7 @@
             <input type="email" name="user_email" />
             <label>Message</label>
             <textarea name="message"></textarea>
-            <button class="btn">Sumbit</button>
+            <button class="btn" value="Send" type="submit">Sumbit</button>
           </form>
         </div>
       </div>
@@ -31,10 +33,10 @@ export default {
     sendEmail: e => {
       emailjs
         .sendForm(
-          "YOUR_SERVICE_ID",
-          "YOUR_TEMPLATE_ID",
+          "logan_gmail",
+          "contact_form",
           e.target,
-          "YOUR_USER_ID"
+          "user_b2HN3DOB9yIkgddI73kwu"
         )
         .then(
           result => {
@@ -44,6 +46,7 @@ export default {
             console.log("FAILED...", error);
           }
         );
+      e.target.reset();
     }
   }
 };
@@ -53,5 +56,14 @@ export default {
 form {
   display: flex;
   flex-direction: column;
+}
+form input {
+  border: none;
+  border-bottom: 1pt solid black;
+  margin-bottom: 25pt;
+}
+form label {
+  align-self: start;
+  margin: 0;
 }
 </style>
