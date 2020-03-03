@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link>
+      <router-link to="/services">Services</router-link>
+      <router-link to="/about">About Us</router-link>
+      <router-link to="/contact">Contact</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -19,11 +21,13 @@
 
 #nav {
   padding: 30px;
+  background-color: black;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
+  margin: 0 5pt 0 0;
 }
 
 #nav a.router-link-exact-active {
