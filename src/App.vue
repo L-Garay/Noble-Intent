@@ -4,7 +4,7 @@
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">Logo here</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler custom-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavDropdown"
@@ -63,14 +63,42 @@
 #nav {
   padding: 30px;
   background-color: rgb(24, 57, 98);
+  background-image: radial-gradient(
+    circle at top left,
+    rgb(24, 57, 98),
+    rgb(131, 196, 66)
+  );
+  /* box-shadow: 0 5px 5px black; */
 }
 #nav a {
   font-weight: bold;
   color: rgb(253, 186, 20);
+  /* color: white; */
   margin: 0 5pt 0 0;
+  text-shadow: 0 0 3px black;
+}
+#nav a:hover {
+  text-shadow: 0 0 4px rgb(110, 110, 110);
 }
 #nav a.router-link-exact-active {
-  color: rgb(253, 186, 20);
+  /* color: rgb(253, 186, 20); */
   /* color: rgb(131, 196, 66); */
+  color: white;
+  background-color: rgb(131, 196, 66);
+  border-radius: 5%;
+}
+button.navbar-toggler {
+  border-color: rgb(24, 57, 98);
+  color: rgb(253, 186, 20);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253,186,20, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Styling dropdown items */
+.dropdown-menu {
+  background-color: rgb(24, 57, 98);
+  border: 2pt solid grey;
+  box-shadow: 3px 3px 4px black;
 }
 </style>
