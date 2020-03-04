@@ -19,22 +19,8 @@
             <li class="nav-item active">
               <router-link to="/" class="nav-link">Home</router-link>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >Services</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <router-link to="/group-therapy" class="dropdown-item">Group Therapy</router-link>
-                <router-link to="/parents" class="dropdown-item">Parent Education Groups</router-link>
-                <router-link to="/training" class="dropdown-item">Training and Consultation</router-link>
-                <router-link to="/clinical" class="dropdown-item">Clinical Supervision</router-link>
-              </div>
+            <li class="nav-item">
+              <router-link to="/services" class="nav-link">Services</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link">About Us</router-link>
