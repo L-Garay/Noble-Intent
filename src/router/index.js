@@ -7,13 +7,7 @@ import About from "../views/About.vue";
 // @ts-ignore
 import Contact from "../views/Contact.vue";
 // @ts-ignore
-import Clinical from "../views/ClinicalSupervision.vue";
-// @ts-ignore
-import GroupTherapy from "../views/GroupTherapy.vue";
-// @ts-ignore
-import Parents from "../views/ParentEducation.vue";
-// @ts-ignore
-import Training from "../views/TrainingConsultation.vue";
+import Services from "../views/Services.vue";
 
 Vue.use(VueRouter);
 
@@ -34,24 +28,9 @@ const routes = [
     component: Contact
   },
   {
-    path: "/clinical",
-    name: "ClinicalSupervision",
-    component: Clinical
-  },
-  {
-    path: "/group-therapy",
-    name: "GroupTherapy",
-    component: GroupTherapy
-  },
-  {
-    path: "/parents",
-    name: "ParentEducation",
-    component: Parents
-  },
-  {
-    path: "/training",
-    name: "TrainingConsultation",
-    component: Training
+    path: "/services",
+    name: "Services",
+    component: Services
   }
 ];
 

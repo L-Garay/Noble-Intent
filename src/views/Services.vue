@@ -2,7 +2,7 @@
   <div class="container-fluid" id="services">
     <div class="row">
       <div class="col-12">
-        <h1>This is the training page.</h1>
+        <h1>This is the services page.</h1>
       </div>
     </div>
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "TrainingConsultation"
+  name: "Services"
 };
 </script>
 
