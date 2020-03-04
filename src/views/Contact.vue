@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row justify-content-center align-items-center">
-      <div class="col-3">
+      <div class="col-12 col-sm-3">
         <div>
           <form id="contact-form" @submit.prevent="sendEmail">
             <label>Name</label>
